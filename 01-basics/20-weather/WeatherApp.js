@@ -19,7 +19,7 @@ export default defineComponent({
     }
 
     function pressureMMHG(pressureHPA) {
-      return parseInt(pressureHPA * 0.75)
+      return parseFloat(pressureHPA * 0.75).toFixed(0)
     }
   
     return {
